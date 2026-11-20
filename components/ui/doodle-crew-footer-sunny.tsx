@@ -1037,11 +1037,7 @@ export default function DoodleCrewFooter({
 
             <g ref={(el) => void (crewLayerRefs.current[0] = el)}>
               <g className="dcf-ground">
-                <path className="dcf-draw" pathLength={1} d={ground.d} style={{ "--d": tl.ground + "ms" } as React.CSSProperties} />
-                <path className="dcf-tufts dcf-fade" d={ground.tufts} style={{ "--d": tl.ground + 500 + "ms" } as React.CSSProperties} />
-                {ground.pebbles.map((pb, k) => (
-                  <ellipse key={k} className="dcf-pebble dcf-fade" cx={pb.x} cy={pb.y} rx={pb.r * 1.5} ry={pb.r} style={{ "--d": tl.ground + 600 + "ms" } as React.CSSProperties} />
-                ))}
+                <path className="dcf-draw" pathLength={1} d={ground.d} style={{ "--d": tl.ground + "ms" } as React.CSSProperties} />                
               </g>
               {placed.filter((p) => p.seat === "behind").map((p) => renderCrew(p, "body"))}
             </g>
