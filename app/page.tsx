@@ -13,7 +13,7 @@ export default function Home() {
         ink: "#4B3A42",
         accent: "#FD7A65",
         }}
-        wordmark="PICNIC"
+        wordmark="DESIGN"
         brand="picnic club"
         blurb="Small-batch snacks, packed by hand and delivered by bike every Saturday morning."
         tagline="Lunch, but make it an adventure."
