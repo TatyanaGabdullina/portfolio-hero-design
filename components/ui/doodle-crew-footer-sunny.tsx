@@ -680,14 +680,8 @@ export default function DoodleCrewFooter({
       const x = x0 + ((x1 - x0) * k) / n
       d += " Q" + (x - (x1 - x0) / n / 2).toFixed(1) + " " + (6 + (hash(k * 3.1) - 0.5) * 5).toFixed(1) + " " + x.toFixed(1) + " " + (6 + (hash(k * 7.7) - 0.5) * 2).toFixed(1)
     }
-    let tufts = ""
-    for (let k = 0; k < 22; k++) {
-      const x = x0 + 20 + hash(k * 11.3) * (x1 - x0 - 40)
-      const s = 0.7 + hash(k * 5.9) * 0.6
-      tufts += "M" + x.toFixed(1) + " 6 l" + (2 * s).toFixed(1) + " " + (-9 * s).toFixed(1) + " M" + (x + 3 * s).toFixed(1) + " 6 l" + (1 * s).toFixed(1) + " " + (-12 * s).toFixed(1) + " M" + (x + 6 * s).toFixed(1) + " 6 l" + (-1 * s).toFixed(1) + " " + (-7 * s).toFixed(1) + " "
-    }
-    const pebbles = Array.from({ length: 9 }, (_, k) => ({ x: x0 + 40 + hash(k * 17.1) * (x1 - x0 - 80), y: 14 + hash(k * 2.3) * 8, r: 2 + hash(k * 9.4) * 2.6 }))
-    return { d, tufts, pebbles }
+
+    return { d }
   }, [view])
 
   // ---- doodles ----
