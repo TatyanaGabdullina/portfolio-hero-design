@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <DoodleCrewFooter
         preset="auto"
-        fontFamily="var(--font-oswald), sans-serif"
+        fontFamily="'Oswald', sans-serif"
         palette={{
         background: "#E7E6E1",
         ink: "#4B3A42",
