@@ -400,35 +400,20 @@ const ART: { [k: string]: Art } = {
       </>
     ),
   },
-  cat: {
+    cat: {
     k: 1.06,
-    box: { l: -30, r: 52, t: -110, b: 4 },
+    box: { l: -41, r: 41, t: -56, b: 0 },
     seat: "front",
-    eyes: [{ x: 10, y: -76, r: 6, pupil: 2.8, max: 2.6 }],
-    body: (hatch) => (
-      <>
-        <ellipse className="dcf-shadow" cx="4" cy="2" rx="32" ry="4" />
-        <g className="dcf-tail">
-          <path d="M18 -4 C42 -4 52 -24 46 -44 C44 -51 36 -53 34 -46 C40 -30 34 -16 16 -14 Z" />
-          <path className="n thin" d="M40 -16 l5 4 M45 -30 l6 1 M43 -42 l6 -3" />
-        </g>
-        <path d="M-22 0 C-28 -18 -24 -42 -14 -52 L14 -52 C24 -42 28 -18 22 0 C10 3 -10 3 -22 0 Z" />
-        <path d="M14 -46 C24 -36 26 -16 22 0 C18 1 14 2 12 2 C16 -14 16 -32 10 -46 Z" fill={hatch} stroke="none" />
-        <path className="n" d="M-8 -30 L-9 -1 M8 -30 L9 -1" />
-        <path d="M-16 1 C-16 -5 -3 -5 -3 1 Z M3 1 C3 -5 16 -5 16 1 Z" />
-        <path className="a" d="M-18 -55 C-6 -49 6 -49 18 -55 L17 -46 C6 -40 -6 -40 -17 -46 Z" />
-        <path className="a" d="M9 -45 L18 -32 L6 -37 Z" />
-        <path d="M-22 -86 L-25 -107 L-7 -96 Z" />
-        <path d="M8 -96 L23 -108 L22 -86 Z" />
-        <path className="n thin" d="M-20 -92 L-21 -101 M18 -101 L18 -92" />
-        <path d="M-26 -70 C-28 -88 -16 -98 0 -98 C16 -98 28 -88 26 -70 C24 -56 12 -50 0 -50 C-12 -50 -24 -56 -26 -70 Z" />
-        <path className="n thin" d="M-4 -97 L-3 -90 M3 -97 L3 -91" />
-        <path className="n" d="M-26 -80 C-14 -83 4 -87 25 -93" />
-        <ellipse className="k" cx="-10" cy="-76" rx="7.5" ry="6.5" />
-        <path className="k" d="M-2.5 -68 L2.5 -68 L0 -64.5 Z" />
-        <path className="n" d="M0 -64.5 C-1 -60.5 -5 -60.5 -6 -62.5 M0 -64.5 C1 -60.5 5 -60.5 6 -62.5" />
-        <path className="n thin" d="M-15 -66 L-29 -68 M-15 -63 L-28 -59 M15 -66 L29 -68 M15 -63 L28 -59" />
-      </>
+    eyes: [],
+    body: () => (
+      <image
+        href="/web.svg"
+        x="-41"
+        y="-56"
+        width="82"
+        height="56"
+        preserveAspectRatio="xMidYMid meet"
+      />
     ),
   },
   ghost: {
