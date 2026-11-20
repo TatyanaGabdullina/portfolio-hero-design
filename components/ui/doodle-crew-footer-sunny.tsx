@@ -1139,38 +1139,6 @@ export default function DoodleCrewFooter({
           </div>
         )}
 
-        <div className="dcf-cta">
-          <p className="dcf-tagline">
-            {words.map((w, k) => (
-              <span key={k} className="dcf-word" style={{ "--d": tl.word(k) + "ms" } as React.CSSProperties}>
-                {w}{" "}
-              </span>
-            ))}
-          </p>
-          {actions.length > 0 && (
-            <div className="dcf-actions">
-              {actions.map((a, k) => {
-                const inner = (
-                  <>
-                    {a.icon && <DoodleIcon kind={a.icon} />}
-                    <span>{a.label}</span>
-                  </>
-                )
-                const cls = "dcf-btn dcf-pop " + (a.variant === "outline" ? "is-outline" : "is-solid")
-                const st = { "--d": tl.action(k) + "ms" } as React.CSSProperties
-                return a.href ? (
-                  <a key={a.label} className={cls} style={st} href={a.href} onClick={a.onClick}>
-                    {inner}
-                  </a>
-                ) : (
-                  <button key={a.label} type="button" className={cls} style={st} onClick={a.onClick}>
-                    {inner}
-                  </button>
-                )
-              })}
-            </div>
-          )}
-        </div>
       </div>
 
     </footer>
