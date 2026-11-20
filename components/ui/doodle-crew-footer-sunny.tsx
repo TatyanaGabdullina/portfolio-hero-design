@@ -275,7 +275,7 @@ const DEFAULT_CREW: CrewMember[] = [
   { kind: "mushroom", letter: 2, seat: "front", offset: 0.12, scale: 0.95, name: "Morel", says: "I'm a fun guy." },
   { kind: "kid", letter: 4, seat: "top", offset: -0.05, name: "Juno", says: "Up here! Best seat in the house." },
   { kind: "ghost", letter: 6, seat: "behind", offset: 0, name: "Boo", says: "Boo! …sorry. Hi." },
-  { kind: "cat", letter: 7, seat: "front", offset: 0.42, flip: true, name: "Patch", says: "Arr. Nice cursor." },
+  { kind: "cat", letter: 7, seat: "front", offset: 0.42, name: "Web" },
 ]
 
 const DEFAULT_COLUMNS: FooterColumn[] = [
