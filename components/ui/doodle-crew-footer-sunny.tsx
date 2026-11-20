@@ -1173,30 +1173,6 @@ export default function DoodleCrewFooter({
         </div>
       </div>
 
-      <div className="dcf-bar dcf-rise" style={{ "--d": "120ms" } as React.CSSProperties}>
-        <p className="dcf-copy">{copyright}</p>
-        {legal.length > 0 && (
-          <ul className="dcf-inline">
-            {legal.map((l) => (
-              <li key={l.label}>
-                <Link link={l} className="dcf-link" />
-              </li>
-            ))}
-          </ul>
-        )}
-        {socials.length > 0 && (
-          <ul className="dcf-inline dcf-socials">
-            {socials.map((l) => (
-              <li key={l.label}>
-                <Link link={l} className="dcf-link" />
-              </li>
-            ))}
-          </ul>
-        )}
-        {backToTop && (
-          <button type="button" className="dcf-totop" onClick={toTop}>
-            <span>Back to top</span>
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
               <path d="M12 20 C11 14 12.5 9 12 4 M6 10 C8 8 10 6 12 4 C14 6 16 8 18.5 9.5" />
             </svg>
           </button>
