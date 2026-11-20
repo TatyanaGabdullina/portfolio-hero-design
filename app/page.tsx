@@ -6,8 +6,12 @@ export default function Home() {
   return (
     <main>
       <DoodleCrewFooter
-        preset="sunny"
-        palette={{ background: "#E7E6E1" }}
+        preset="auto"
+        palette={{
+        background: "#E7E6E1",
+        ink: "#4B3A42",
+        accent: "#FD7A65",
+        }}
         wordmark="PICNIC"
         brand="picnic club"
         blurb="Small-batch snacks, packed by hand and delivered by bike every Saturday morning."
