@@ -66,7 +66,7 @@ export type Seat = "front" | "top" | "behind"
 export const seatPoint = (seat: Seat, letterX: number, letterW: number, cap: number, offset: number, scale: number): { x: number; y: number } => {
   const x = letterX + letterW * (0.5 + (Number.isFinite(offset) ? offset : 0))
   if (seat === "top") return { x, y: -cap }
-  if (seat === "behind") return { x, y: -cap + 30 * scale }
+  if (seat === "behind") return { x, y: -cap + 12 * scale }
   return { x, y: 0 }
 }
 
