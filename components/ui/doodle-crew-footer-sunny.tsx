@@ -621,6 +621,7 @@ export default function DoodleCrewFooter({
           const scale = (cap / 144) * art.k * (m.scale ?? 1)
           const seat = m.seat || art.seat
           const p = seatPoint(seat, layout.x[li], layout.w[li], cap, m.offset ?? 0, scale)
+          if (m.kind === "ghost") p.x += layout.width * 0.06
           return { i, m, art, seat, scale, ...p, flip: m.flip ? -1 : 1 }
         })
         .filter(Boolean) as { i: number; m: CrewMember; art: Art; seat: Seat; scale: number; x: number; y: number; flip: number }[],
