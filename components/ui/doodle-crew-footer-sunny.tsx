@@ -416,29 +416,20 @@ const ART: { [k: string]: Art } = {
       />
     ),
   },
-  ghost: {
+   ghost: {
     k: 1.3,
-    box: { l: -26, r: 26, t: -70, b: 0 },
+    box: { l: -60, r: 60, t: -70, b: 0 },
     seat: "behind",
-    eyes: [
-      { x: -8, y: -44, r: 6.5, pupil: 3.2, max: 3 },
-      { x: 9, y: -44, r: 6.5, pupil: 3.2, max: 3 },
-    ],
-    idle: "dcf-bob",
-    body: (hatch) => (
-      <>
-        <path d="M-23 -14 L-23 -40 C-23 -59 -12 -67 0 -67 C12 -67 23 -59 23 -40 L23 -14 C12 -10 -12 -10 -23 -14 Z" />
-        <path d="M13 -61 C21 -54 23 -46 23 -36 L23 -15 L15 -13 L15 -36 C15 -46 15 -54 13 -61 Z" fill={hatch} stroke="none" />
-        <path className="n thin" d="M-16 -56 C-12 -61 -6 -63 -2 -63" />
-        <path className="k" d="M-5 -33 C-3 -27 4 -27 6 -33 Z" />
-        <path className="n thin" d="M-17 -35 l3 -2 M-14 -34 l3 -2 M14 -35 l3 -2 M17 -34 l3 -2" />
-      </>
-    ),
-    front: () => (
-      <>
-        <path d="M-25 -32 C-27 -38 -21 -42 -17 -38 C-15 -42 -10 -41 -10 -36 L-11 -30 C-15 -28 -22 -28 -25 -32 Z" />
-        <path d="M25 -32 C27 -38 21 -42 17 -38 C15 -42 10 -41 10 -36 L11 -30 C15 -28 22 -28 25 -32 Z" />
-      </>
+    eyes: [],
+    body: () => (
+      <image
+        href="/graphic.svg"
+        x="-60"
+        y="-70"
+        width="120"
+        height="70"
+        preserveAspectRatio="xMidYMid meet"
+      />
     ),
   },
   mushroom: {
