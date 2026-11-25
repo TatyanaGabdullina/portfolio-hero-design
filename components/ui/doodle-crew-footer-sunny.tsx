@@ -317,8 +317,8 @@ const ART: { [k: string]: Art } = {
   box: { l: -72, r: 60, t: -140, b: 6 },
   seat: "front",
   eyes: [
-  { x: -15, y: -86, r: 10, pupil: 4.2, max: 4.2 },
-  { x: 13, y: -88, r: 10, pupil: 4.2, max: 4.2 },
+  { x: -15, y: -86, r: 12, pupil: 5, max: 5 },
+  { x: 13, y: -88, r: 12, pupil: 5, max: 5 },
 ],
   body: () => null,
 },
