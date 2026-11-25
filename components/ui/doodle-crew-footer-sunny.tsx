@@ -377,21 +377,21 @@ const ART: { [k: string]: Art } = {
     ),
   },
     cat: {
-    k: 1.06,
-    box: { l: -41, r: 41, t: -56, b: 0 },
-    seat: "front",
-    eyes: [],
-    body: () => (
-      <image
-        href="/graphic.svg"
-        x="-41"
-        y="-56"
-        width="82"
-        height="56"
-        preserveAspectRatio="xMidYMid meet"
-      />
-    ),
-  },
+  k: 1.06,
+  box: { l: -41, r: 41, t: -41, b: 15 },
+  seat: "front",
+  eyes: [],
+  body: () => (
+    <image
+      href="/graphic.svg"
+      x="-41"
+      y="-41"
+      width="82"
+      height="56"
+      preserveAspectRatio="xMidYMid meet"
+    />
+  ),
+},
    ghost: {
     k: 1.3,
     box: { l: -51, r: 51, t: -60, b: 0 },
