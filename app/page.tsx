@@ -22,11 +22,11 @@ export default function Home() {
           { label: "Order now", href: "#", icon: "heart", variant: "solid" },
         ]}
         crew={[
-          { kind: "cat", letter: 0, seat: "front", offset: -0.36, name: "Graphic" },
-          { kind: "ghost", letter: 3, seat: "behind", name: "Web" },
-          { kind: "kid", letter: 5, seat: "front", offset: 0.4, scale: 0.92, flip: true, name: "Motion" },
-          { kind: "yeti", letter: 1, seat: "front", offset: 0, scale: 0.92, flip: true, name: "Eyes" },
-        ]}
+          { kind: "cat", letter: 0, seat: "front", offset: -0.36, name: "Graphic", says: "I only eat the fancy tuna." },
+          { kind: "ghost", letter: 3, seat: "behind", name: "Web", says: "I'm here for the cheese." },
+          { kind: "kid", letter: 5, seat: "front", offset: 0.4, scale: 0.92, flip: true, name: "Motion", says: "Window seat!" },
+          { kind: "yeti", letter: 1, seat: "front", offset: 0, scale: 0.92, flip: true, name: "Bruno", says: "Seconds, please." },
+]}
         doodles={["sandwich", "heart", "star", "sandwich", "sparkle"]}
         doodleCount={10}
         columns={[
