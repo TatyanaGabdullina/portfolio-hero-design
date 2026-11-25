@@ -399,7 +399,7 @@ const ART: { [k: string]: Art } = {
     eyes: [],
     body: () => (
       <image
-        href="/graphic.svg"
+        href="/web.svg"
         x="-51"
         y="-60"
         width="102"
