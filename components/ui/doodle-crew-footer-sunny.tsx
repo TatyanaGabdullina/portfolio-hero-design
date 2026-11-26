@@ -393,21 +393,21 @@ const ART: { [k: string]: Art } = {
   ),
 },
    ghost: {
-    k: 1.3,
-    box: { l: -51, r: 51, t: -60, b: 0 },
-    seat: "behind",
-    eyes: [],
-    body: () => (
-      <image
-        href="/web.svg"
-        x="-51"
-        y="-60"
-        width="102"
-        height="60"
-        preserveAspectRatio="xMidYMid meet"
-      />
-    ),
-  },
+  k: 1.3,
+  box: { l: -20.4, r: 20.4, t: -24, b: 0 },
+  seat: "behind",
+  eyes: [],
+  body: () => (
+    <image
+      href="/web.svg"
+      x="-20.4"
+      y="-24"
+      width="40.8"
+      height="24"
+      preserveAspectRatio="xMidYMid meet"
+    />
+  ),
+},
   mushroom: {
     k: 1.12,
     box: { l: -27, r: 27, t: -56, b: 4 },
