@@ -936,15 +936,21 @@ export default function DoodleCrewFooter({
                 </filter>
               ))}
               <filter id={uid + "-ink"} x="-4%" y="-6%" width="108%" height="112%">
-                <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="11" result="edge" />
-                <feDisplacementMap in="SourceGraphic" in2="edge" scale="5" xChannelSelector="R" yChannelSelector="G" result="rough" />
-                <feTurbulence type="fractalNoise" baseFrequency="0.018 0.32" numOctaves="2" seed="4" result="streak" />
-                <feColorMatrix in="streak" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -16 5.6" result="streakA" />
-                <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="1" seed="9" result="speck" />
-                <feColorMatrix in="speck" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -24 7.0" result="speckA" />
-                <feComposite in="streakA" in2="speckA" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="holes" />
-                <feComposite in="rough" in2="holes" operator="out" />
-              </filter>
+                <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.045"
+                numOctaves="3"
+                seed="11"
+                result="edge"
+                />
+                <feDisplacementMap
+                in="SourceGraphic"
+                in2="edge"
+                scale="5"
+                xChannelSelector="R"
+                yChannelSelector="G"
+                />
+            </filter>
             </defs>
 
             <g ref={(el) => void (crewLayerRefs.current[0] = el)}>
