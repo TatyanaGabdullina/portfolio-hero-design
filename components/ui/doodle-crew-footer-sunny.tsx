@@ -298,37 +298,21 @@ const ART: { [k: string]: Art } = {
   body: () => null,
 },
   kid: {
-    k: 1.28,
-    box: { l: -30, r: 30, t: -88, b: 42 },
-    seat: "top",
-    eyes: [
-      { x: -6, y: -58, r: 0, pupil: 2.5, max: 1.8 },
-      { x: 6.5, y: -58, r: 0, pupil: 2.5, max: 1.8 },
-    ],
-    body: (hatch) => (
-      <>
-        <path d="M-15 -6 L-3 -6 C-3 8 -5 20 -6 30 L-15 30 C-15 18 -16 6 -15 -6 Z" />
-        <path d="M3 -6 L15 -6 C17 6 19 16 22 27 L12 30 C10 18 6 6 3 -6 Z" />
-        <path d="M3 -6 L15 -6 C17 6 19 16 22 27 L12 30 C10 18 6 6 3 -6 Z" fill={hatch} stroke="none" />
-        <path className="k" d="M-17 30 C-20 34 -20 40 -14 41 L-2 41 C2 40 0 34 -5 30 Z" />
-        <path className="k" d="M11 29 C8 34 10 40 16 40 L26 38 C29 36 27 30 22 27 Z" />
-        <path d="M-20 -4 C-22 -20 -18 -38 -10 -44 L10 -44 C18 -38 22 -20 20 -4 Z" />
-        <path className="n thick" d="M-19.5 -14 L19.5 -14 M-18.5 -26 L18.5 -26 M-14 -36 L14 -36" />
-        <path className="n" d="M-18 -36 C-28 -28 -30 -14 -26 -5" />
-        <circle cx="-26" cy="-3" r="4" />
-        <path className="n" d="M18 -36 C27 -30 30 -18 28 -7" />
-        <circle cx="28" cy="-4" r="4" />
-        <circle cx="-17" cy="-58" r="4" />
-        <circle cx="17" cy="-58" r="4" />
-        <circle cx="0" cy="-60" r="17" />
-        <path className="n thin" d="M-11 -52 l2 -2 M-8 -52 l2 -2 M8 -52 l2 -2 M11 -52 l2 -2" />
-        <path className="n" d="M-5 -50 C-2 -47 2 -47 5 -50" />
-        <path d="M-15 -70 C-14 -87 14 -87 15 -70 Z" />
-        <path d="M-27 -68 C-16 -75 16 -75 27 -68 C18 -63 -18 -63 -27 -68 Z" />
-        <path className="n thick" d="M-14.5 -74 C-6 -77 6 -77 14.5 -74" />
-      </>
-    ),
-  },
+  k: 1.28,
+  box: { l: -41, r: 41, t: -47, b: 9 },
+  seat: "top",
+  eyes: [],
+  body: () => (
+    <image
+      href="/motion.svg"
+      x="-41"
+      y="-47"
+      width="82"
+      height="56"
+      preserveAspectRatio="xMidYMid meet"
+    />
+  ),
+},
   bird: {
     k: 1.22,
     box: { l: -34, r: 30, t: -62, b: 2 },
