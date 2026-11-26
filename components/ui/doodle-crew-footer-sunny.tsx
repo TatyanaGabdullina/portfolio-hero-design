@@ -378,14 +378,14 @@ const ART: { [k: string]: Art } = {
   },
     cat: {
   k: 1.06,
-  box: { l: -41, r: 41, t: -41, b: 15 },
+  box: { l: -41, r: 41, t: -47, b: 9 },
   seat: "front",
   eyes: [],
   body: () => (
     <image
       href="/graphic.svg"
       x="-41"
-      y="-41"
+      y="-47"
       width="82"
       height="56"
       preserveAspectRatio="xMidYMid meet"
