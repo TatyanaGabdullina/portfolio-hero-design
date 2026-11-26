@@ -22,10 +22,10 @@ export default function Home() {
           { label: "Order now", href: "#", icon: "heart", variant: "solid" },
         ]}
         crew={[
-          { kind: "cat", letter: 0, seat: "front", offset: -0.36, name: "Graphic", says: "I only eat the fancy tuna." },
-          { kind: "ghost", letter: 1, seat: "top", name: "Web", says: "I'm here for the cheese." },
-          { kind: "kid", letter: 4, seat: "front", offset: 0.5, scale: 0.92, flip: false, name: "Motion", says: "Window seat!" },
-          { kind: "yeti", letter: 1, seat: "front", offset: 0, scale: 0.92, flip: true, name: "Bruno", says: "Seconds, please." },
+          { kind: "cat", letter: 0, seat: "front", offset: -0.36, name: "Graphic", says: "Dizajn má zmysel!" },
+          { kind: "ghost", letter: 1, seat: "top", name: "Web", says: "Poďme na web!" },
+          { kind: "kid", letter: 4, seat: "front", offset: 0.5, scale: 0.92, flip: false, name: "Motion", says: "Rozhýbme to!" },
+          { kind: "yeti", letter: 1, seat: "front", offset: 0, scale: 0.92, flip: true, name: "Bruno" },
 ]}
         doodles={["sandwich", "heart", "star", "sandwich", "sparkle"]}
         doodleCount={10}
