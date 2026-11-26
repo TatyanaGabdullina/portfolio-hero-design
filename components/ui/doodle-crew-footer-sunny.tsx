@@ -301,7 +301,6 @@ const ART: { [k: string]: Art } = {
   k: 1.28,
   box: { l: -41, r: 41, t: -5, b: 51 },
   seat: "front",
-  flip: false,
   eyes: [],
   body: () => (
     <image
