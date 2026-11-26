@@ -2,31 +2,6 @@
 
 import * as React from "react"
 
-/**
- * Doodle Crew Footer — a site footer drawn like the last page of a sketchbook.
- * The brand's name is stamped across it in giant dry-brush ink, and a crew of
- * hand-drawn characters lives on the letters: one leans against the first
- * letter, one sits on top with its legs dangling, one peeks over the edge.
- * Little ink doodles (flames, snacks, stars) drift down around them.
- *
- * Scroll it into view and it plays out like a short storyboard: the ground line
- * draws itself, the letters stamp down one by one with a puff of ink, the crew
- * pops up, plops down or rises from behind their letters, the doodles start to
- * fall, and the line and buttons rise in last.
- *
- * Then it stays alive: every eye follows your pointer (and blinks), the lines
- * boil like hand-drawn animation, letters wobble when you hover them, a click
- * on any character makes it hop and say its line, and doodles scatter from the
- * pointer and pop when you catch one.
- *
- * No dependencies and nothing fetched: React is the only import, every drawing
- * is inline SVG, and the ink texture is an SVG filter.
- */
-
-// #region crew
-// Pure: wordmark layout, seats, gaze, the doodle drift and the storyboard timing.
-// Lifted out and run by the test.
-
 /** A small deterministic hash → [0, 1), so every render lays the scene out the same way. */
 export const hash = (n: number): number => {
   const s = Math.sin(n * 127.1 + 311.7) * 43758.5453
@@ -394,14 +369,14 @@ const ART: { [k: string]: Art } = {
 },
   ghost: {
   k: 1.3,
-  box: { l: -21.5, r: 29.5, t: -35, b: -2 },
+  box: { l: -11.5, r: 39.5, t: -33, b: 0 },
   seat: "front",
   eyes: [],
   body: () => (
     <image
       href="/web.svg"
-      x="-21.5"
-      y="-35"
+      x="-11.5"
+      y="-33"
       width="51"
       height="30"
       preserveAspectRatio="xMidYMid meet"
