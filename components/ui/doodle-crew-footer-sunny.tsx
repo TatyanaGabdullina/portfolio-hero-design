@@ -394,16 +394,16 @@ const ART: { [k: string]: Art } = {
 },
   ghost: {
   k: 1.3,
-  box: { l: -25.5, r: 25.5, t: -33, b: 0 },
+  box: { l: -38.5, r: 27.5, t: -27, b: 0 },
   seat: "front",
   eyes: [],
   body: () => (
     <image
       href="/web.svg"
-      x="-25.5"
-      y="-33"
-      width="51"
-      height="30"
+      x="-38.5"
+      y="-27"
+      width="66"
+      height="39"
       preserveAspectRatio="xMidYMid meet"
     />
   ),
