@@ -9,7 +9,6 @@ export const hash = (n: number): number => {
 }
 
 export const clamp = (v: number, lo: number, hi: number): number => (v < lo ? lo : v > hi ? hi : v)
-
 /**
  * Lays the wordmark out from per-letter advances (in font units): the left edge
  * of each letter, with `tracking` (in em) added between letters, and the total
