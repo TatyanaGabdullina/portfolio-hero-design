@@ -299,14 +299,14 @@ const ART: { [k: string]: Art } = {
 },
   kid: {
   k: 1.28,
-  box: { l: -41, r: 41, t: -43, b: 13 },
+  box: { l: -41, r: 41, t: -42, b: 14 },
   seat: "front",
   eyes: [],
   body: () => (
     <image
       href="/motion.svg"
       x="-41"
-      y="-43"
+      y="-42"
       width="82"
       height="56"
       preserveAspectRatio="xMidYMid meet"
