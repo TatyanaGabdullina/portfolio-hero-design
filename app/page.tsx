@@ -24,7 +24,7 @@ export default function Home() {
         crew={[
           { kind: "cat", letter: 0, seat: "front", offset: -0.36, name: "Graphic", says: "I only eat the fancy tuna." },
           { kind: "ghost", letter: 1, seat: "top", name: "Web", says: "I'm here for the cheese." },
-          { kind: "kid", letter: 4, seat: "front", offset: 0.85, scale: 0.92, flip: false, name: "Motion", says: "Window seat!" },
+          { kind: "kid", letter: 5, seat: "front", offset: 0.3, scale: 0.92, flip: false, name: "Motion", says: "Window seat!" },
           { kind: "yeti", letter: 1, seat: "front", offset: 0, scale: 0.92, flip: true, name: "Bruno", says: "Seconds, please." },
 ]}
         doodles={["sandwich", "heart", "star", "sandwich", "sparkle"]}
