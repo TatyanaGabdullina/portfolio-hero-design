@@ -416,7 +416,7 @@ case "sandwich":
     case "star":
   return (
     <image
-      href="/hashtag.svg"
+      href="/speach1.svg"
       x="-16"
       y="-16"
       width="32"
