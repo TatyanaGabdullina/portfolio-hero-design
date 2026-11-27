@@ -406,10 +406,10 @@ case "sandwich":
   return (
     <image
       href="/star1.svg"
-      x="-16"
-      y="-16"
-      width="32"
-      height="32"
+      x="-20"
+      y="-20"
+      width="40"
+      height="40"
       preserveAspectRatio="xMidYMid meet"
     />
   )
@@ -417,10 +417,10 @@ case "sandwich":
   return (
     <image
       href="/speach1.svg"
-      x="-30"
-      y="-30"
-      width="60"
-      height="60"
+      x="-25"
+      y="-25"
+      width="50"
+      height="50"
       preserveAspectRatio="xMidYMid meet"
     />
   )
@@ -438,7 +438,16 @@ case "sandwich":
     case "bolt":
       return <path fill={ACCENT.gold} d="M3 -14 L-8 2 L-1 2 L-4 14 L8 -3 L1 -3 Z" />
     case "sparkle":
-      return <path fill="#8fdcff" d="M0 -13 C1 -4 4 -1 13 0 C4 1 1 4 0 13 C-1 4 -4 1 -13 0 C-4 -1 -1 -4 0 -13 Z" />
+  return (
+    <image
+      href="/hashtag.svg"
+      x="-16"
+      y="-16"
+      width="32"
+      height="32"
+      preserveAspectRatio="xMidYMid meet"
+    />
+  )
     case "spiral":
       return <path fill="none" d="M0 0 C2 -2 4 0 3 3 C1 6 -4 5 -5 1 C-6 -4 -1 -8 4 -7 C9 -5 10 2 7 6" />
     case "plane":
