@@ -413,7 +413,16 @@ const Doodle = ({ kind }: { kind: DoodleKind }) => {
         </>
       )
     case "star":
-      return <path fill={ACCENT.gold} d="M0 -13 L3.6 -4.4 L13 -4 L5.8 2.2 L8.2 12 L0 6.6 L-8.2 12 L-5.8 2.2 L-13 -4 L-3.6 -4.4 Z" />
+  return (
+    <image
+      href="/star2.svg"
+      x="-16"
+      y="-16"
+      width="32"
+      height="32"
+      preserveAspectRatio="xMidYMid meet"
+    />
+  )
     case "heart":
   return (
     <image
