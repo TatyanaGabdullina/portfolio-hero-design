@@ -415,7 +415,16 @@ const Doodle = ({ kind }: { kind: DoodleKind }) => {
     case "star":
       return <path fill={ACCENT.gold} d="M0 -13 L3.6 -4.4 L13 -4 L5.8 2.2 L8.2 12 L0 6.6 L-8.2 12 L-5.8 2.2 L-13 -4 L-3.6 -4.4 Z" />
     case "heart":
-      return <path fill={ACCENT.heart} d="M0 11 C-6 6 -13 1 -13 -5 C-13 -10 -8 -13 -4 -11 C-2 -10 -1 -8 0 -6 C1 -8 2 -10 4 -11 C8 -13 13 -10 13 -5 C13 1 6 6 0 11 Z" />
+  return (
+    <image
+      href="/heart.svg"
+      x="-16"
+      y="-16"
+      width="32"
+      height="32"
+      preserveAspectRatio="xMidYMid meet"
+    />
+  )
     case "bolt":
       return <path fill={ACCENT.gold} d="M3 -14 L-8 2 L-1 2 L-4 14 L8 -3 L1 -3 Z" />
     case "sparkle":
