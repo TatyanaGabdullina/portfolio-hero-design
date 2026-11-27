@@ -588,7 +588,8 @@ export default function DoodleCrewFooter({
     [crew, chars.length, layout, cap],
   )
 
-  // The viewBox hugs the word, the crew and the ground.
+  // Center the wordmark in the SVG; expand the viewBox symmetrically
+  // around it so crew artwork remains visible without shifting the word.
   const view = React.useMemo(() => {
     let l = 0
     let r = layout.width
@@ -601,8 +602,10 @@ export default function DoodleCrewFooter({
       t = Math.min(t, p.y + p.art.box.t * p.scale)
       b = Math.max(b, p.y + p.art.box.b * p.scale)
     }
+    const wordCenter = layout.width / 2
+    const halfWidth = Math.max(wordCenter - l, r - wordCenter)
     const pad = 24
-    return { x: l - pad, y: t - pad, w: r - l + pad * 2, h: b - t + pad * 2 }
+    return { x: wordCenter - halfWidth - pad, y: t - pad, w: halfWidth * 2 + pad * 2, h: b - t + pad * 2 }
   }, [layout, placed, cap])
 
   const words = tagline.split(/\s+/).filter(Boolean)
