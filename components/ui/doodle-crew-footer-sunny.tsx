@@ -417,10 +417,10 @@ case "sandwich":
   return (
     <image
       href="/speach1.svg"
-      x="-16"
-      y="-16"
-      width="32"
-      height="32"
+      x="-30"
+      y="-30"
+      width="60"
+      height="60"
       preserveAspectRatio="xMidYMid meet"
     />
   )
