@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-
 /** A small deterministic hash → [0, 1), so every render lays the scene out the same way. */
 export const hash = (n: number): number => {
   const s = Math.sin(n * 127.1 + 311.7) * 43758.5453
@@ -530,7 +529,7 @@ export default function DoodleCrewFooter({
   serifFamily = DEFAULT_SERIF,
   tracking = -0.02,
   interactive = true,
-  height = "760px",
+  height = "1000px",
   className,
 }: DoodleCrewFooterProps) {
   const uid = React.useId().replace(/[^a-zA-Z0-9_-]/g, "")
@@ -540,7 +539,6 @@ export default function DoodleCrewFooter({
 
   const rootRef = React.useRef(null as HTMLElement | null)
   const svgRef = React.useRef(null as SVGSVGElement | null)
-  const worldRef = React.useRef(null as HTMLDivElement | null)
   const crewLayerRefs = React.useRef([] as (SVGGElement | null)[])
   const eyeRefs = React.useRef([] as { blink: SVGGElement | null; pupil: SVGGElement | null }[][])
   const doodleRefs = React.useRef([] as (HTMLDivElement | null)[])
@@ -649,7 +647,7 @@ export default function DoodleCrewFooter({
 
   // Lay the doodles out once the world has a size; keep them when it resizes.
   useIso(() => {
-    const el = worldRef.current
+    const el = rootRef.current
     if (!el) return
     const s = sim.current
     const size = () => {
@@ -770,7 +768,7 @@ export default function DoodleCrewFooter({
       last = now
       const t = now / 1000
       const svg = svgRef.current
-      const world = worldRef.current
+      const world = rootRef.current
 
       // eyes
       let target = null as null | { x: number; y: number }
@@ -941,7 +939,7 @@ export default function DoodleCrewFooter({
     >
       <style>{CSS}</style>
 
-      <div className="dcf-world" ref={worldRef}>
+      <div className="dcf-world">
         <div className="dcf-stage">
           <h2 className="dcf-sr">{wordmark}</h2>
           <svg
@@ -1054,6 +1052,9 @@ export default function DoodleCrewFooter({
           </div>
         </div>
 
+
+      </div>
+
         {doodleList.length > 0 && (
           <div className="dcf-doodles" aria-hidden="true">
             {doodleList.map((d, k) => (
@@ -1073,8 +1074,6 @@ export default function DoodleCrewFooter({
             ))}
           </div>
         )}
-
-      </div>
 
     </footer>
   )
@@ -1106,7 +1105,7 @@ const CSS =
   ".dcf-squiggle path{fill:none;stroke:var(--dcf-accent);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .35s cubic-bezier(.4,0,.2,1)}" +
   ".dcf-link:hover .dcf-squiggle path,.dcf-link:focus-visible .dcf-squiggle path{stroke-dashoffset:0}" +
   // world
-  ".dcf-world{position:relative;flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(22px,4vw,48px) var(--dcf-pad) 0;max-width:1360px;width:100%;margin:0 auto}" +
+  ".dcf-world{position:relative;flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(22px,4vw,48px) var(--dcf-pad) 240px;max-width:1360px;width:100%;margin:0 auto}" +
   ".dcf-stage{position:relative;z-index:1}" +
   ".dcf-svg{display:block;width:100%;height:auto;user-select:none;-webkit-user-select:none}" +
   ".dcf-svg text{fill:var(--dcf-ink)}" +
@@ -1137,7 +1136,7 @@ const CSS =
   ".dcf-bubble.is-left{transform:translate(-88%,-100%) rotate(2deg);transform-origin:88% 100%}" +
   ".dcf-bubble.is-left::after{left:88%}" +
   // doodles
-  ".dcf-doodles{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:hidden}" +
+  ".dcf-doodles{position:absolute;inset:0;pointer-events:none;z-index:2;overflow:visible}" +
   ".dcf-doodle{position:absolute;left:0;top:0;pointer-events:auto;cursor:pointer;will-change:transform;touch-action:manipulation}" +
   ".dcf-doodle-in{display:block;width:100%;height:100%}" +
   ".dcf[data-interactive='0'] .dcf-doodle{pointer-events:none}" +
