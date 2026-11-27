@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-
 /** A small deterministic hash → [0, 1), so every render lays the scene out the same way. */
 export const hash = (n: number): number => {
   const s = Math.sin(n * 127.1 + 311.7) * 43758.5453
