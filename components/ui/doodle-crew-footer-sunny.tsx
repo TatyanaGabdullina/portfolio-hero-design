@@ -405,7 +405,7 @@ const Doodle = ({ kind }: { kind: DoodleKind }) => {
 case "sandwich":
   return (
     <image
-      href="/star2.svg"
+      href="/star1.svg"
       x="-16"
       y="-16"
       width="32"
