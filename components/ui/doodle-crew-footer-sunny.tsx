@@ -411,17 +411,16 @@ case "sandwich":
       width="32"
       height="32"
       preserveAspectRatio="xMidYMid meet"
-      style={{ filter: "brightness(0) saturate(100%)" }}
     />
   )
     case "star":
   return (
     <image
-      href="/star2.svg"
-      x="-40"
-      y="-40"
-      width="80"
-      height="80"
+      href="/hashtag.svg"
+      x="-16"
+      y="-16"
+      width="32"
+      height="32"
       preserveAspectRatio="xMidYMid meet"
     />
   )
