@@ -416,10 +416,10 @@ const Doodle = ({ kind }: { kind: DoodleKind }) => {
   return (
     <image
       href="/star2.svg"
-      x="-16"
-      y="-16"
-      width="32"
-      height="32"
+      x="-40"
+      y="-40"
+      width="80"
+      height="80"
       preserveAspectRatio="xMidYMid meet"
     />
   )
